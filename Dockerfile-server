@@ -1,0 +1,5 @@
+FROM alpine:3.7
+
+COPY ./bin/server.exe ./server
+RUN chmod +x ./server
+ENTRYPOINT ./server

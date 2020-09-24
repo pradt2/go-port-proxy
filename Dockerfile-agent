@@ -1,0 +1,5 @@
+FROM alpine:3.7
+
+COPY ./bin/agent.exe ./agent
+RUN chmod +x ./agent
+ENTRYPOINT ./agent
